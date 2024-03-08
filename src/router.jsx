@@ -6,6 +6,10 @@ const router = createBrowserRouter([
     path: "/",
     element: <App />,
   },
+  {
+    path: "*",
+    element: "Impossible de trouver la page",
+  },
 ]);
 
 export default router;

@@ -1,47 +1,61 @@
 import "./style.scss";
-import undertale from "../../assets/img/undertale.jpg";
 import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faAngleLeft } from "@fortawesome/free-solid-svg-icons";
 import { faAngleRight } from "@fortawesome/free-solid-svg-icons";
-
-const projets = [
-  {
-    title: "Mon premier projet",
-    img: undertale,
-    url: "www.perdu.com",
-  },
-  {
-    title: "Mon premier projet",
-    img: undertale,
-    url: "www.perdu.com",
-  },
-  {
-    title: "Mon premier projet",
-    img: undertale,
-    url: "www.perdu.com",
-  },
-];
+import { useState } from "react";
+import { projets } from "./projets.data";
 
 const Carousel = () => {
+  const [sliceFirstValue, setSliceFirstValue] = useState(0);
+  const [sliceSecondValue, setSliceSecondValue] = useState(3);
+  const handleLeft = () => {
+    if (sliceFirstValue >= 1) {
+      setSliceFirstValue(() => sliceFirstValue - 1);
+      setSliceSecondValue(() => sliceSecondValue - 1);
+    }
+  };
+  const handleRight = () => {
+    if (sliceSecondValue <= projets.length - 1) {
+      setSliceFirstValue(() => sliceFirstValue + 1);
+      setSliceSecondValue(() => sliceSecondValue + 1);
+    }
+  };
   return (
     <div className="projects">
-      <FontAwesomeIcon icon={faAngleLeft} className="projects__arrow" />
-      {[...projets].reverse().map((projet, index) => {
-        return (
-          <div key={index} className="project">
-            <Link to={projet.url}>
-              <img
-                className="project__img"
-                src={projet.img}
-                alt={projet.title}
-              />
-              <h3>{projet.title}</h3>
-            </Link>
-          </div>
-        );
-      })}
-      <FontAwesomeIcon icon={faAngleRight} className="projects__arrow" />
+      <FontAwesomeIcon
+        icon={faAngleLeft}
+        className={
+          sliceFirstValue === 0 ? "projects__arrow hidden" : "projects__arrow"
+        }
+        onClick={handleLeft}
+      />
+      {[...projets]
+        .reverse()
+        .slice(sliceFirstValue, sliceSecondValue)
+        .map((projet, index) => {
+          return (
+            <div key={index} className="project">
+              <Link to={projet.url}>
+                <img
+                  className="project__img"
+                  src={projet.img}
+                  alt={projet.title}
+                />
+                <h3 className="project__title">{projet.title}</h3>
+              </Link>
+            </div>
+          );
+        })}
+      <FontAwesomeIcon
+        icon={faAngleRight}
+        className={
+          sliceSecondValue === projets.length
+            ? "projects__arrow hidden"
+            : "projects__arrow"
+        }
+        onClick={handleRight}
+      />
     </div>
   );
 };

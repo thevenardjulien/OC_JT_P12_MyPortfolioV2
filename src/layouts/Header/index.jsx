@@ -38,7 +38,7 @@ const Header = () => {
                     .scrollIntoView({ block: "start" })
                 }
               >
-                • À propos
+                À propos
               </NavLink>
             </li>
 
@@ -51,7 +51,7 @@ const Header = () => {
                     .scrollIntoView({ block: "start" })
                 }
               >
-                • Compétences
+                Compétences
               </NavLink>
             </li>
 
@@ -64,7 +64,7 @@ const Header = () => {
                     .scrollIntoView({ block: "start" })
                 }
               >
-                • Projets
+                Projets
               </NavLink>
             </li>
 
@@ -77,7 +77,7 @@ const Header = () => {
                     .scrollIntoView({ block: "start" })
                 }
               >
-                • Contact
+                Contact
               </NavLink>
             </li>
           </ul>

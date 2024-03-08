@@ -4,11 +4,27 @@
   gap: 50px;
   &__arrow {
     font-size: 3rem;
+    cursor: pointer;
   }
 }
 
 .project {
+  flex: 1;
+  align-self: flex-start;
   &__img {
-    max-width: 250px;
+    width: 250px;
+    height: 250px;
+    aspect-ratio: 16/9;
+    object-fit: cover;
   }
+  &__title {
+    width: 250px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+}
+
+.hidden {
+  visibility: hidden;
 }
