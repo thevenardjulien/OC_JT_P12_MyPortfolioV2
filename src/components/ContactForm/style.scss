@@ -1,0 +1,21 @@
+@use "../../scss/color.scss" as *;
+
+.ContactForm {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  &__input,
+  &__textarea {
+    display: block;
+    padding: 10px 20px;
+    font-size: inherit;
+    font-family: inherit;
+  }
+  &__UserWrapper {
+    display: flex;
+    gap: 10px;
+  }
+  &__button:hover {
+    cursor: pointer;
+  }
+}

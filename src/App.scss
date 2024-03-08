@@ -6,12 +6,18 @@ main {
   min-height: 100vh;
 }
 
+section.about,
 section.skills,
-section.projects {
+section.projects,
+section.contact {
   margin: 100px auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   gap: 20px;
+}
+
+section.about {
+  max-width: 50%;
 }
