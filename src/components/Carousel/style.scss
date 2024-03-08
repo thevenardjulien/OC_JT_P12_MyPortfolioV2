@@ -1,0 +1,14 @@
+.projects {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  &__arrow {
+    font-size: 3rem;
+  }
+}
+
+.project {
+  &__img {
+    max-width: 250px;
+  }
+}

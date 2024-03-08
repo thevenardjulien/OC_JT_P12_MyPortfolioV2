@@ -1,0 +1,20 @@
+@use "../../scss/color.scss" as *;
+
+button {
+  padding: 10px 20px;
+  border-radius: 6px;
+  border: none;
+  font-weight: 600;
+  font-size: inherit;
+  font-family: inherit;
+}
+
+body.true .button {
+  background-color: $primary-background;
+  color: $primary-font;
+}
+
+body.false .button {
+  background-color: $secondary-background;
+  color: $secondary-font;
+}

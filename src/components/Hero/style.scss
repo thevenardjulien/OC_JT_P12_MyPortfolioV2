@@ -1,0 +1,16 @@
+.heroWrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 50px;
+  flex: 1;
+}
+
+.hero {
+  display: flex;
+  align-items: center;
+  gap: 100px;
+  &__img {
+    max-width: 300px;
+  }
+}

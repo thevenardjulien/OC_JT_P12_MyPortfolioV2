@@ -1,0 +1,32 @@
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding-inline: 2rem;
+  padding-block: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logoWrapper {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  &__img {
+    width: 50px;
+  }
+  &__icon {
+    font-size: 2rem;
+    cursor: pointer;
+  }
+}
+
+.mainNav {
+  &__ul {
+    display: flex;
+    gap: 1rem;
+    font-weight: 600;
+  }
+}
