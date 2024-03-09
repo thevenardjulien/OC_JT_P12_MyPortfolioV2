@@ -11,6 +11,9 @@
     font-size: inherit;
     font-family: inherit;
   }
+  &__textarea {
+    min-height: 150px;
+  }
   &__UserWrapper {
     display: flex;
     gap: 10px;

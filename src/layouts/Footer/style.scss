@@ -7,3 +7,9 @@ footer {
   margin-top: 50px;
   padding: 50px;
 }
+
+footer ul {
+  display: flex;
+  gap: 10px;
+  font-size: 1.6rem;
+}

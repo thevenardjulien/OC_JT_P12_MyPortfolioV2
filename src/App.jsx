@@ -21,14 +21,29 @@ function App() {
             <Accordion />
           </div>
           <div className="about__section about__section-right">
-            Possédant un fort attrait envers le{" "}
-            <strong>design graphique</strong> et{" "}
-            <strong>le développement web</strong>, je me suis naturellement{" "}
-            tourné vers ces spécialités. Les formations que j'ai eu la chance de
-            faire n’ont fait que renforcer mes convictions et mon appétence pour
-            ce milieu. Je souhaite désormais <strong>apprendre</strong>,{" "}
-            <strong>évoluer</strong> et être le plus <strong>épanoui</strong>{" "}
-            possible possible dans ce domaine.
+            <span>
+              Après 7 années de bons et loyaux services dans le commerce
+              alimentaire au sein d'une entreprise de surgelés très connu en
+              France, je me suis malheureusement blessé. Cette blessure,
+              m'empêchant de continuer à exercer mon activité de responsable de
+              magasin, c'est rapidement transformé en une opportunité. En effet,
+              il m'etait désormais possible d'entreprendre une formation dans le
+              domaine de mon choix. Une chance unique qui me permettrait
+              peut-être de me réorienter dans ce que j'apprécierais réellement
+              faire.
+            </span>
+            <br />
+            <br />
+            <span>
+              Possédant un fort attrait envers le{" "}
+              <strong>design graphique</strong> et{" "}
+              <strong>le développement web</strong>, je me suis naturellement
+              tourné vers ces spécialités. Les formations que j'ai eu la chance
+              de réaliser n’ont fait que renforcer mes convictions et mon
+              appétence pour ce milieu. Je souhaite désormais{" "}
+              <strong>apprendre</strong>, <strong>évoluer</strong> et{" "}
+              <strong>m'épanouir</strong> dans ces domaines.
+            </span>
           </div>
         </div>
       </section>

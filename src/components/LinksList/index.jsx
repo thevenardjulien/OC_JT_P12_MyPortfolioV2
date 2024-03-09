@@ -6,7 +6,14 @@ const LinksList = () => {
   return (
     <div className="Links">
       {[...List].map((item, index) => {
-        return <Button key={index} title={item.title} url={item.url} />;
+        return (
+          <Button
+            key={index}
+            title={item.title}
+            icon={item.icon}
+            url={item.url}
+          />
+        );
       })}
     </div>
   );

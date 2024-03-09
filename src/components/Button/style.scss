@@ -9,6 +9,14 @@ button {
   font-family: inherit;
 }
 
+.button {
+  &__content {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+}
+
 body.true .button {
   background-color: $primary-background;
   color: $primary-font;
