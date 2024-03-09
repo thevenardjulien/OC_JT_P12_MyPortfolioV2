@@ -1,0 +1,18 @@
+.experiences {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.experience {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  &__img {
+    max-width: 50px;
+    border-radius: 6px;
+  }
+  &__title {
+    font-weight: 600;
+  }
+}

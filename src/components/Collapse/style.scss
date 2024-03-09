@@ -1,4 +1,39 @@
-.collapse {
+@use "../../scss/color.scss" as *;
+
+body.true .collapse {
   &__title {
+    background-color: $primary-background;
+    color: $primary-font;
+  }
+}
+
+body.false .collapse {
+  &__title {
+    background-color: $secondary-background;
+    color: $secondary-font;
+  }
+}
+
+.collapse {
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+  padding-block: 5px;
+  &__title {
+    display: flex;
+    align-items: center;
+    min-height: 60px;
+    text-transform: capitalize;
+    padding: 10px;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-bottom: 10px;
+  }
+  &__content {
+    min-width: 100%;
+    padding: 5px;
+    &-hidden {
+      display: none;
+    }
   }
 }

@@ -18,6 +18,15 @@ section.contact {
   gap: 20px;
 }
 
-section.about {
-  max-width: 50%;
+.about {
+  &__content {
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+  }
+  &__section {
+    &-right {
+      width: 50%;
+    }
+  }
 }
