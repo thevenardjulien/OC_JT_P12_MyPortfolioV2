@@ -6,6 +6,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faMoon } from "@fortawesome/free-regular-svg-icons";
 import { faSun } from "@fortawesome/free-regular-svg-icons";
 import { NavLink } from "react-router-dom";
+import { faHouse } from "@fortawesome/free-solid-svg-icons";
 
 const Header = () => {
   const { darkMode, toggleDarkMode } = useContext(DarkModeContext);
@@ -29,52 +30,55 @@ const Header = () => {
       <div>
         <nav className="mainNav">
           <ul className="mainNav__ul">
-            <li>
+            <li className="mainNav__li" onClick={() => window.scrollTo(0, 0)}>
+              <FontAwesomeIcon icon={faHouse} />
+            </li>
+            <li className="mainNav__li">
               <NavLink
                 href="#"
                 onClick={() =>
                   document
                     .querySelector("#about")
-                    .scrollIntoView({ block: "start" })
+                    .scrollIntoView({ block: "center" })
                 }
               >
                 À propos
               </NavLink>
             </li>
 
-            <li>
+            <li className="mainNav__li">
               <NavLink
                 href="#"
                 onClick={() =>
                   document
                     .querySelector("#skills")
-                    .scrollIntoView({ block: "start" })
+                    .scrollIntoView({ block: "center" })
                 }
               >
                 Compétences
               </NavLink>
             </li>
 
-            <li>
+            <li className="mainNav__li">
               <NavLink
                 href="#"
                 onClick={() =>
                   document
                     .querySelector("#projects")
-                    .scrollIntoView({ block: "start" })
+                    .scrollIntoView({ block: "center" })
                 }
               >
                 Projets
               </NavLink>
             </li>
 
-            <li>
+            <li className="mainNav__li">
               <NavLink
                 href="#"
                 onClick={() =>
                   document
                     .querySelector("#contact")
-                    .scrollIntoView({ block: "start" })
+                    .scrollIntoView({ block: "center" })
                 }
               >
                 Contact

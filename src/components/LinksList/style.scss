@@ -3,4 +3,17 @@
   flex-wrap: wrap;
   justify-content: center;
   gap: 20px;
+  animation: linkPop 300ms ease-in forwards;
+  animation-delay: 300ms;
+  opacity: 0;
+}
+
+@keyframes linkPop {
+  from {
+    transform: translateX(5000px);
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
 }

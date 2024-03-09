@@ -1,3 +1,15 @@
+@use "../../scss/color.scss" as *;
+
+body.true header {
+  background-color: $secondary-background;
+  color: $secondary-font;
+}
+
+body.false header {
+  background-color: $primary-background;
+  color: $primary-font;
+}
+
 header {
   position: fixed;
   top: 0;
@@ -8,6 +20,15 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  opacity: 0;
+  animation: headerPop 300ms ease-in forwards;
+  animation-delay: 600ms;
+}
+
+@keyframes headerPop {
+  to {
+    opacity: 1;
+  }
 }
 
 .logoWrapper {
@@ -28,5 +49,8 @@ header {
     display: flex;
     gap: 1rem;
     font-weight: 600;
+  }
+  &__li {
+    cursor: pointer;
   }
 }
