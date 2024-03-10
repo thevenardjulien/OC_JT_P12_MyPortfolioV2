@@ -19,14 +19,26 @@ section.contact {
 }
 
 .about {
+  max-width: 80%;
   &__content {
     display: flex;
+    flex-direction: column-reverse;
     justify-content: center;
     gap: 100px;
   }
-  &__section {
-    &-right {
-      width: 50%;
+}
+
+@media screen and (min-width: 1024px) {
+  .about {
+    &__content {
+      flex-direction: row;
+      gap: 50px;
+    }
+    &__section-left {
+      width: 40%;
+    }
+    &__section-right {
+      width: 60%;
     }
   }
 }

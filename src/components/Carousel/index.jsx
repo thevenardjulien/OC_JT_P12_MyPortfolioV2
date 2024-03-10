@@ -26,7 +26,9 @@ const Carousel = () => {
       <FontAwesomeIcon
         icon={faAngleLeft}
         className={
-          sliceFirstValue === 0 ? "projects__arrow hidden" : "projects__arrow"
+          sliceFirstValue === 0
+            ? "projects__arrow projects__arrow-left hidden"
+            : "projects__arrow projects__arrow-left"
         }
         onClick={handleLeft}
       />
@@ -51,8 +53,8 @@ const Carousel = () => {
         icon={faAngleRight}
         className={
           sliceSecondValue === projets.length
-            ? "projects__arrow hidden"
-            : "projects__arrow"
+            ? "projects__arrow projects__arrow-right hidden"
+            : "projects__arrow projects__arrow-right"
         }
         onClick={handleRight}
       />

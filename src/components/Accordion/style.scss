@@ -1,2 +1,8 @@
-.accordion {
+.activites {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  &__arrow {
+    margin-right: 10px;
+  }
 }

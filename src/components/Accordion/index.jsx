@@ -1,6 +1,7 @@
 import Collapse from "../Collapse";
 import Experiences from "../Experiences";
 import Languages from "../Languages";
+import { activites } from "./activites.data";
 import "./style.scss";
 
 const Accordion = () => {
@@ -8,7 +9,7 @@ const Accordion = () => {
     <div className="accordion">
       <div className="accordion__menu">
         <Collapse title="FORMATIONS" content={<Experiences />} />
-        <Collapse title="COMPÉTENCES" content="À venir ..." />
+        <Collapse title="ACTIVITÉS" content={activites} />
         <Collapse title="LANGUES" content={<Languages />} />
       </div>
       <div className="accordion__content"></div>

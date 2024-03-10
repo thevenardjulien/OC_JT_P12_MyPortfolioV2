@@ -7,9 +7,15 @@ import { faMoon } from "@fortawesome/free-regular-svg-icons";
 import { faSun } from "@fortawesome/free-regular-svg-icons";
 import { NavLink } from "react-router-dom";
 import { faHouse } from "@fortawesome/free-solid-svg-icons";
+import { faBars } from "@fortawesome/free-solid-svg-icons";
+import { useState } from "react";
 
 const Header = () => {
   const { darkMode, toggleDarkMode } = useContext(DarkModeContext);
+  const [displayMobileNav, setDisplayMobileNav] = useState(false);
+  const handleMobileNav = () => {
+    setDisplayMobileNav(!displayMobileNav);
+  };
   return (
     <header>
       <div className="logoWrapper">
@@ -28,6 +34,10 @@ const Header = () => {
         </div>
       </div>
       <div>
+        <div className="mobileNav" onClick={handleMobileNav}>
+          <FontAwesomeIcon icon={faBars} />
+        </div>
+
         <nav className="mainNav">
           <ul className="mainNav__ul">
             <li className="mainNav__li" onClick={() => window.scrollTo(0, 0)}>

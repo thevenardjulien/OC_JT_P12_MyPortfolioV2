@@ -12,6 +12,7 @@ body.false header {
 
 header {
   position: fixed;
+  z-index: 1000;
   top: 0;
   left: 0;
   right: 0;
@@ -45,7 +46,12 @@ header {
   }
 }
 
+.mobileNav {
+  font-size: 2rem;
+}
+
 .mainNav {
+  display: none;
   &__ul {
     display: flex;
     gap: 1rem;
@@ -53,5 +59,15 @@ header {
   }
   &__li {
     cursor: pointer;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .mobileNav {
+    display: none;
+  }
+
+  .mainNav {
+    display: flex;
   }
 }

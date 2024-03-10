@@ -16,6 +16,7 @@
   }
   &__UserWrapper {
     display: flex;
+    flex-direction: column;
     gap: 10px;
   }
   &__button:hover {

@@ -1,10 +1,16 @@
 .projects {
   display: flex;
-  align-items: center;
+  flex-direction: column;
   gap: 50px;
   &__arrow {
     font-size: 3rem;
     cursor: pointer;
+    &-left {
+      transform: rotate(90deg);
+    }
+    &-right {
+      transform: rotate(90deg);
+    }
   }
 }
 
@@ -28,4 +34,19 @@
 
 .hidden {
   visibility: hidden;
+}
+
+@media screen and (min-width: 1024px) {
+  .projects {
+    flex-direction: row;
+    align-items: center;
+    &__arrow {
+      &-left {
+        transform: rotate(0);
+      }
+      &-right {
+        transform: rotate(0);
+      }
+    }
+  }
 }
