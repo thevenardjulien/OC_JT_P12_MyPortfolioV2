@@ -12,6 +12,7 @@ const LinksList = () => {
             title={item.title}
             icon={item.icon}
             url={item.url}
+            target="_Blank"
           />
         );
       })}
