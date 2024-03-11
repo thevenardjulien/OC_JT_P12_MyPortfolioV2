@@ -70,7 +70,7 @@ const Header = () => {
             </li>
             <li className="mobileNav__li">
               <NavLink
-                href="#"
+                to="/"
                 onClick={() =>
                   document
                     .querySelector("#about")
@@ -83,7 +83,7 @@ const Header = () => {
 
             <li className="mobileNav__li">
               <NavLink
-                href="#"
+                to="/"
                 onClick={() =>
                   document
                     .querySelector("#skills")
@@ -96,7 +96,7 @@ const Header = () => {
 
             <li className="mobileNav__li">
               <NavLink
-                href="#"
+                to="/"
                 onClick={() =>
                   document
                     .querySelector("#projects")
@@ -109,7 +109,7 @@ const Header = () => {
 
             <li className="mobileNav__li">
               <NavLink
-                href="#"
+                to="/"
                 onClick={() =>
                   document
                     .querySelector("#contact")
@@ -129,7 +129,7 @@ const Header = () => {
             </li>
             <li className="mainNav__li">
               <NavLink
-                href="#"
+                to="/"
                 onClick={() =>
                   document
                     .querySelector("#about")
@@ -142,7 +142,7 @@ const Header = () => {
 
             <li className="mainNav__li">
               <NavLink
-                href="#"
+                to="/"
                 onClick={() =>
                   document
                     .querySelector("#skills")
@@ -155,7 +155,7 @@ const Header = () => {
 
             <li className="mainNav__li">
               <NavLink
-                href="#"
+                to="/"
                 onClick={() =>
                   document
                     .querySelector("#projects")
@@ -168,7 +168,7 @@ const Header = () => {
 
             <li className="mainNav__li">
               <NavLink
-                href="#"
+                to="/"
                 onClick={() =>
                   document
                     .querySelector("#contact")

@@ -1,5 +1,15 @@
 @use "../../scss/color.scss" as *;
 
+body.true .ContactForm__button {
+  background-color: $secondary-background;
+  color: $secondary-font;
+}
+
+body.false .ContactForm__button {
+  background-color: $primary-background;
+  color: $primary-font;
+}
+
 .ContactForm {
   display: flex;
   flex-direction: column;

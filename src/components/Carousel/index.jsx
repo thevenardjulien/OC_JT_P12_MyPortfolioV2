@@ -5,6 +5,7 @@ import { faAngleLeft } from "@fortawesome/free-solid-svg-icons";
 import { faAngleRight } from "@fortawesome/free-solid-svg-icons";
 import { useState } from "react";
 import { projets } from "./projets.data";
+import Card from "../Card";
 
 const Carousel = () => {
   const [sliceFirstValue, setSliceFirstValue] = useState(0);
@@ -39,23 +40,28 @@ const Carousel = () => {
         .slice(sliceFirstValue, sliceSecondValue)
         .map((projet, index) => {
           return (
-            <div key={index} className="project">
-              <Link to={projet.url}>
-                <img
-                  className="project__img"
-                  src={projet.img}
-                  alt={projet.title}
-                />
-                <h3 className="project__title">
-                  {projet.title}
-                  <img
-                    className="project__title-img"
-                    src={projet.icon}
-                    alt={projet.title}
-                  />
-                </h3>
-              </Link>
-            </div>
+            <Card
+              key={index}
+              content={
+                <div className="project">
+                  <Link to={projet.url}>
+                    <img
+                      className="project__img"
+                      src={projet.img}
+                      alt={projet.title}
+                    />
+                    <h3 className="project__title">
+                      {projet.title}
+                      <img
+                        className="project__title-img"
+                        src={projet.icon}
+                        alt={projet.title}
+                      />
+                    </h3>
+                  </Link>
+                </div>
+              }
+            />
           );
         })}
       {projets.length > 3 && (

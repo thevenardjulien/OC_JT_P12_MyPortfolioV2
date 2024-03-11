@@ -2,6 +2,7 @@ import { useRef } from "react";
 import { toast } from "sonner";
 import emailjs from "@emailjs/browser";
 import "./style.scss";
+import Card from "../Card";
 
 const ContactForm = () => {
   const form = useRef(null);
@@ -42,43 +43,47 @@ const ContactForm = () => {
   return (
     <>
       <h2>Contact</h2>
-      <form
-        ref={form}
-        className="ContactForm"
-        onSubmit={(e) => handleSubmit(e)}
-      >
-        <div className="ContactForm__UserWrapper">
-          <input
-            className="ContactForm__input"
-            type="text"
-            id="userName"
-            name="userName"
-            placeholder="Name"
-            required
-            minLength={3}
-            maxLength={126}
-          />
-          <input
-            className="ContactForm__input"
-            type="email"
-            id="email"
-            name="email"
-            placeholder="Email"
-            required
-            maxLength={126}
-          />
-        </div>
-        <textarea
-          className="ContactForm__textarea"
-          id="message"
-          name="message"
-          placeholder="Message"
-          required
-        />
-        <button className="button ContactForm__button" type="submit">
-          Submit
-        </button>
-      </form>
+      <Card
+        content={
+          <form
+            ref={form}
+            className="ContactForm"
+            onSubmit={(e) => handleSubmit(e)}
+          >
+            <div className="ContactForm__UserWrapper">
+              <input
+                className="ContactForm__input"
+                type="text"
+                id="userName"
+                name="userName"
+                placeholder="Name"
+                required
+                minLength={3}
+                maxLength={126}
+              />
+              <input
+                className="ContactForm__input"
+                type="email"
+                id="email"
+                name="email"
+                placeholder="Email"
+                required
+                maxLength={126}
+              />
+            </div>
+            <textarea
+              className="ContactForm__textarea"
+              id="message"
+              name="message"
+              placeholder="Message"
+              required
+            />
+            <button className="button ContactForm__button" type="submit">
+              Submit
+            </button>
+          </form>
+        }
+      />
     </>
   );
 };

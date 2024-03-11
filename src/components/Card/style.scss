@@ -1,0 +1,16 @@
+@use "../../scss/color.scss" as *;
+
+body.true .card {
+  background-color: $primary-background;
+  color: $primary-font;
+}
+
+body.false .card {
+  background-color: $secondary-background;
+  color: $secondary-font;
+}
+
+.card {
+  padding: 20px;
+  border-radius: 6px;
+}

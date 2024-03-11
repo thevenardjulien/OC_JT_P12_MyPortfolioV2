@@ -9,7 +9,7 @@ export const projets = [
   {
     title: "Sophie Bluel Portfolio",
     img: sophieImage,
-    url: "www.perdu.com",
+    url: "/projets/sophiebluel",
     icon: oclogo,
   },
   {
