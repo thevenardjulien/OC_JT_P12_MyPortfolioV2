@@ -22,15 +22,16 @@ function App() {
           </div>
           <div className="about__section about__section-right">
             <span>
-              Après 7 années de bons et loyaux services dans le commerce
-              alimentaire au sein d'une entreprise de surgelés très connu en
-              France, je me suis malheureusement blessé. Cette blessure,
-              m'empêchant de continuer à exercer mon activité de responsable de
-              magasin, c'est rapidement transformé en une opportunité. En effet,
-              il m'etait désormais possible d'entreprendre une formation dans le
-              domaine de mon choix. Une chance unique qui me permettrait
-              peut-être de me réorienter dans ce que j'apprécierais réellement
-              faire.
+              Après sept années dévouées au sein en commerce alimentaire au sein
+              d'une entreprise de surgelés renommée en France, le destin a
+              malheureusement pris une tournure inattendue suite à une blessure.
+              Cette incapacité à poursuivre mon rôle de responsable de magasin
+              s'est rapidement métamorphosée en une{" "}
+              <strong>opportunité inattendue</strong>. Désormais, une porte
+              s'est ouverte pour suivre une formation dans le domaine de mon
+              choix, offrant ainsi la possibilité de{" "}
+              <strong>redéfinir ma trajectoire professionnelle</strong> vers
+              quelque chose qui correspondrait véritablement à mes aspirations.
             </span>
             <br />
             <br />
