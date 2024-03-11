@@ -41,7 +41,7 @@ header {
     width: 50px;
   }
   &__icon {
-    font-size: 2rem;
+    font-size: 1.4rem;
     cursor: pointer;
   }
 }
@@ -64,6 +64,10 @@ body.false .mobileNav {
   color: $secondary-font;
 }
 
+.mobileNavBtn {
+  cursor: pointer;
+}
+
 .mobileNav {
   font-weight: 600;
   position: absolute;
@@ -79,6 +83,10 @@ body.false .mobileNav {
     position: absolute;
     top: 20px;
     right: 20px;
+    cursor: pointer;
+  }
+  &__icon {
+    cursor: pointer;
   }
   &__ul {
     display: flex;

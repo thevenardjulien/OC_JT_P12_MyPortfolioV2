@@ -1,11 +1,11 @@
 import "./App.scss";
-import Hero from "./components/Hero";
 import Header from "./layouts/Header";
+import Hero from "./components/Hero";
+import Accordion from "./components/Accordion";
 import Skills from "./components/Skills";
 import Projects from "./components/Projects";
 import ContactForm from "./components/ContactForm";
 import Footer from "./layouts/Footer";
-import Accordion from "./components/Accordion";
 
 function App() {
   return (
@@ -33,8 +33,6 @@ function App() {
               <strong>redéfinir ma trajectoire professionnelle</strong> vers
               quelque chose qui correspondrait véritablement à mes aspirations.
             </span>
-            <br />
-            <br />
             <span>
               Possédant un fort attrait envers le{" "}
               <strong>design graphique</strong> et{" "}

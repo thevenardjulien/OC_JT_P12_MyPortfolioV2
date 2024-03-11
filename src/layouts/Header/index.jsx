@@ -66,8 +66,9 @@ const Header = () => {
           </span>
           <ul className="mobileNav__ul">
             <li className="mobileNav__li" onClick={() => window.scrollTo(0, 0)}>
-              <FontAwesomeIcon icon={faHouse} />
+              <FontAwesomeIcon icon={faHouse} className="mobileNav__icon" />
             </li>
+
             <li className="mobileNav__li">
               <NavLink
                 to="/"
@@ -125,7 +126,7 @@ const Header = () => {
         <nav className="mainNav">
           <ul className="mainNav__ul">
             <li className="mainNav__li" onClick={() => window.scrollTo(0, 0)}>
-              <FontAwesomeIcon icon={faHouse} />
+              <FontAwesomeIcon icon={faHouse} className="mainNav__icon" />
             </li>
             <li className="mainNav__li">
               <NavLink

@@ -26,6 +26,11 @@ section.contact {
     justify-content: center;
     gap: 100px;
   }
+  &__section-right {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
 }
 
 @media screen and (min-width: 1024px) {

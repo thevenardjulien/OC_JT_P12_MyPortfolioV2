@@ -10,6 +10,7 @@ import Card from "../Card";
 const Carousel = () => {
   const [sliceFirstValue, setSliceFirstValue] = useState(0);
   const [sliceSecondValue, setSliceSecondValue] = useState(3);
+
   const handleLeft = () => {
     if (sliceFirstValue >= 1) {
       setSliceFirstValue(() => sliceFirstValue - 1);
@@ -44,7 +45,7 @@ const Carousel = () => {
               key={index}
               content={
                 <div className="project">
-                  <Link to={projet.url}>
+                  <Link to={projet.url} target="_Blank">
                     <img
                       className="project__img"
                       src={projet.img}
