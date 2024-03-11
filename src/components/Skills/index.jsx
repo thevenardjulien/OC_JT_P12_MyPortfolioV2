@@ -4,14 +4,14 @@ import "./style.scss";
 import { useState } from "react";
 
 const Skills = () => {
-  const [category, setCategory] = useState("tous");
+  const [category, setCategory] = useState("tout");
   const handleCat = (e) => {
     e.preventDefault();
     setCategory(e.currentTarget.innerText.toLowerCase());
   };
 
   const skillsToDisplay =
-    category === "tous"
+    category === "tout"
       ? [...skills].reverse()
       : [...skills].reverse().filter((skill) => skill.category === category);
 
@@ -20,7 +20,7 @@ const Skills = () => {
       <h2>Compétences</h2>
       <div className="skillFilters">
         <span onClick={handleCat}>
-          <Button title="Tous" url="#" />
+          <Button title="Tout" url="#" />
         </span>
         <span onClick={handleCat}>
           <Button title="Dev" url="#" />

@@ -23,3 +23,11 @@
     cursor: pointer;
   }
 }
+
+@media screen and (min-width: 1024px) {
+  .ContactForm {
+    &__UserWrapper {
+      flex-direction: row;
+    }
+  }
+}

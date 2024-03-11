@@ -1,4 +1,5 @@
 import { faLinkedin } from "@fortawesome/free-brands-svg-icons";
+import { faSquareBehance } from "@fortawesome/free-brands-svg-icons";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import { faEnvelope } from "@fortawesome/free-regular-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -13,6 +14,11 @@ const List = [
     title: "LinkedIn",
     icon: <FontAwesomeIcon icon={faLinkedin} />,
     url: `https://www.linkedin.com/in/julien-thevenard-951988168/`,
+  },
+  {
+    title: "Bëhance",
+    icon: <FontAwesomeIcon icon={faSquareBehance} />,
+    url: `https://www.behance.net/julienthevenard1`,
   },
   {
     title: "thevenard.julien@gmail.com",

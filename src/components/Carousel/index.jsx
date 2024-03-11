@@ -23,15 +23,17 @@ const Carousel = () => {
   };
   return (
     <div className="projects">
-      <FontAwesomeIcon
-        icon={faAngleLeft}
-        className={
-          sliceFirstValue === 0
-            ? "projects__arrow projects__arrow-left hidden"
-            : "projects__arrow projects__arrow-left"
-        }
-        onClick={handleLeft}
-      />
+      {projets.length > 3 && (
+        <FontAwesomeIcon
+          icon={faAngleLeft}
+          className={
+            sliceFirstValue === 0
+              ? "projects__arrow projects__arrow-left hidden"
+              : "projects__arrow projects__arrow-left"
+          }
+          onClick={handleLeft}
+        />
+      )}
       {[...projets]
         .reverse()
         .slice(sliceFirstValue, sliceSecondValue)
@@ -44,20 +46,29 @@ const Carousel = () => {
                   src={projet.img}
                   alt={projet.title}
                 />
-                <h3 className="project__title">{projet.title}</h3>
+                <h3 className="project__title">
+                  {projet.title}
+                  <img
+                    className="project__title-img"
+                    src={projet.icon}
+                    alt={projet.title}
+                  />
+                </h3>
               </Link>
             </div>
           );
         })}
-      <FontAwesomeIcon
-        icon={faAngleRight}
-        className={
-          sliceSecondValue === projets.length
-            ? "projects__arrow projects__arrow-right hidden"
-            : "projects__arrow projects__arrow-right"
-        }
-        onClick={handleRight}
-      />
+      {projets.length > 3 && (
+        <FontAwesomeIcon
+          icon={faAngleRight}
+          className={
+            sliceSecondValue === projets.length
+              ? "projects__arrow projects__arrow-right hidden"
+              : "projects__arrow projects__arrow-right"
+          }
+          onClick={handleRight}
+        />
+      )}
     </div>
   );
 };

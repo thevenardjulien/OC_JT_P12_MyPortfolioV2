@@ -46,5 +46,14 @@
     &__img {
       max-width: 300px;
     }
+    &__infos {
+      align-items: start;
+      &-title {
+        font-size: 2.5rem;
+      }
+      &-baseline {
+        font-size: 1.4rem;
+      }
+    }
   }
 }

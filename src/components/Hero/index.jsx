@@ -8,8 +8,8 @@ const Hero = () => {
       <div className="hero">
         <img className="hero__img" src={avatar} alt="hero img" />
         <div className="hero__infos">
-          <h1>JULIEN THEVENARD</h1>
-          <p>Développeur Front-End</p>
+          <h1 className="hero__infos-title">JULIEN THEVENARD</h1>
+          <p className="hero__infos-baseline">Développeur Front-End</p>
         </div>
       </div>
       <LinksList />

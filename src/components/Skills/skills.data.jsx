@@ -4,8 +4,15 @@ import javascriptLogo from "../../assets/img/skills/javascript.png";
 import reactLogo from "../../assets/img/skills/react.png";
 import typescriptLogo from "../../assets/img/skills/typescript.png";
 import sassLogo from "../../assets/img/skills/sass.png";
+import premiereproLogo from "../../assets/img/skills/premierepro.png";
+import figmaLogo from "../../assets/img/skills/figma.png";
 
 export const skills = [
+  {
+    logo: premiereproLogo,
+    name: "PremierePro",
+    category: "design",
+  },
   {
     logo: photoshopLogo,
     name: "Photoshop",
@@ -15,6 +22,16 @@ export const skills = [
     logo: illustratorLogo,
     name: "Illustrator",
     category: "design",
+  },
+  {
+    logo: figmaLogo,
+    name: "Figma",
+    category: "design",
+  },
+  {
+    logo: sassLogo,
+    name: "Sass",
+    category: "dev",
   },
   {
     logo: javascriptLogo,
@@ -29,11 +46,6 @@ export const skills = [
   {
     logo: typescriptLogo,
     name: "TypeScript",
-    category: "dev",
-  },
-  {
-    logo: sassLogo,
-    name: "Sass",
     category: "dev",
   },
 ];
