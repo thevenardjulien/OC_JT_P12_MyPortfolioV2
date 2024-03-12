@@ -6,7 +6,7 @@ const Button = ({ title, icon, url, target }) => {
     <button className="button">
       <Link to={url} target={target}>
         <div className="button__content">
-          {icon}
+          {icon && <span className="button__icon icon">{icon}</span>}
           {title}
         </div>
       </Link>

@@ -12,7 +12,7 @@ const Footer = () => {
       <ul>
         <li>
           <Link to="https://github.com/thevenardjulien" target="_Blank">
-            <FontAwesomeIcon icon={faGithub} />
+            <FontAwesomeIcon icon={faGithub} className="footer__icon icon" />
           </Link>
         </li>
         <li>
@@ -20,12 +20,12 @@ const Footer = () => {
             to="https://www.linkedin.com/in/julien-thevenard-951988168/"
             target="_Blank"
           >
-            <FontAwesomeIcon icon={faLinkedin} />
+            <FontAwesomeIcon icon={faLinkedin} className="footer__icon icon" />
           </Link>
         </li>
         <li>
           <Link to="mailto:thevenard.julien@gmail.com" target="_Blank">
-            <FontAwesomeIcon icon={faEnvelope} />
+            <FontAwesomeIcon icon={faEnvelope} className="footer__icon icon" />
           </Link>
         </li>
       </ul>

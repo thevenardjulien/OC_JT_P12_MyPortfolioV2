@@ -45,7 +45,10 @@ const Header = () => {
           alt="avatar"
           onClick={() => window.scroll(0, 0)}
         />
-        <div className="logoWrapper__icon" onClick={() => toggleDarkMode()}>
+        <div
+          className="logoWrapper__icon icon"
+          onClick={() => toggleDarkMode()}
+        >
           {darkMode ? (
             <FontAwesomeIcon icon={faMoon} />
           ) : (
@@ -54,19 +57,22 @@ const Header = () => {
         </div>
       </div>
       <div>
-        <div className="mobileNavBtn" onClick={handleMobileNavBtn}>
+        <div className="mobileNavBtn icon" onClick={handleMobileNavBtn}>
           <FontAwesomeIcon icon={faBars} />
         </div>
         <nav
           className={displayMobileNav ? "mobileNav" : "mobileNavHidden"}
           onClick={handleMobileNav}
         >
-          <span className="mobileNav__xmark" onClick={closeMobileNav}>
+          <span className="mobileNav__xmark icon" onClick={closeMobileNav}>
             <FontAwesomeIcon icon={faSquareXmark} />
           </span>
           <ul className="mobileNav__ul">
             <li className="mobileNav__li" onClick={() => window.scrollTo(0, 0)}>
-              <FontAwesomeIcon icon={faHouse} className="mobileNav__icon" />
+              <FontAwesomeIcon
+                icon={faHouse}
+                className="mobileNav__icon icon"
+              />
             </li>
 
             <li className="mobileNav__li">
@@ -126,7 +132,7 @@ const Header = () => {
         <nav className="mainNav">
           <ul className="mainNav__ul">
             <li className="mainNav__li" onClick={() => window.scrollTo(0, 0)}>
-              <FontAwesomeIcon icon={faHouse} className="mainNav__icon" />
+              <FontAwesomeIcon icon={faHouse} className="mainNav__icon icon" />
             </li>
             <li className="mainNav__li">
               <NavLink

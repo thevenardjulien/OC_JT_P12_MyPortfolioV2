@@ -6,6 +6,7 @@ import { faAngleRight } from "@fortawesome/free-solid-svg-icons";
 import { useState } from "react";
 import { projets } from "./projets.data";
 import Card from "../Card";
+import { faGithub } from "@fortawesome/free-brands-svg-icons";
 
 const Carousel = () => {
   const [sliceFirstValue, setSliceFirstValue] = useState(0);
@@ -53,11 +54,17 @@ const Carousel = () => {
                     />
                     <h3 className="project__title">
                       {projet.title}
-                      <img
-                        className="project__title-img"
-                        src={projet.icon}
-                        alt={projet.title}
-                      />
+                      {projet.github === true ? (
+                        <Link
+                          to={projet.githubLink}
+                          target="_Blank"
+                          className="project__icon icon"
+                        >
+                          <FontAwesomeIcon icon={faGithub} />
+                        </Link>
+                      ) : (
+                        ""
+                      )}
                     </h3>
                   </Link>
                 </div>

@@ -41,13 +41,12 @@ header {
     width: 50px;
   }
   &__icon {
-    font-size: 1.4rem;
-    cursor: pointer;
+    font-size: 1.6rem;
   }
 }
 
 .mobileNavBtn {
-  font-size: 2rem;
+  font-size: 1.6rem;
 }
 
 .mobileNavHidden {
@@ -62,10 +61,6 @@ body.true .mobileNav {
 body.false .mobileNav {
   background-color: $secondary-background;
   color: $secondary-font;
-}
-
-.mobileNavBtn {
-  cursor: pointer;
 }
 
 .mobileNav {
@@ -83,16 +78,15 @@ body.false .mobileNav {
     position: absolute;
     top: 20px;
     right: 20px;
-    cursor: pointer;
-  }
-  &__icon {
-    cursor: pointer;
   }
   &__ul {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 10px;
+  }
+  &__icon {
+    font-size: 1.4rem;
   }
 }
 
@@ -103,8 +97,8 @@ body.false .mobileNav {
     gap: 1rem;
     font-weight: 600;
   }
-  &__li {
-    cursor: pointer;
+  &__icon {
+    font-size: 1.4rem;
   }
 }
 

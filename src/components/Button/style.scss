@@ -16,6 +16,9 @@ button {
     align-items: center;
     gap: 10px;
   }
+  &__icon {
+    font-size: 1.4rem;
+  }
 }
 
 body.true .button {
