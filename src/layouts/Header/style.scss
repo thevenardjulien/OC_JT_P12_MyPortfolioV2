@@ -40,13 +40,6 @@ header {
   &__img {
     width: 50px;
   }
-  &__icon {
-    font-size: 1.6rem;
-  }
-}
-
-.mobileNavBtn {
-  font-size: 1.6rem;
 }
 
 .mobileNavHidden {
@@ -74,7 +67,6 @@ body.false .mobileNav {
   justify-content: center;
   align-items: center;
   &__xmark {
-    font-size: 2rem;
     position: absolute;
     top: 20px;
     right: 20px;
@@ -85,9 +77,6 @@ body.false .mobileNav {
     align-items: center;
     gap: 10px;
   }
-  &__icon {
-    font-size: 1.4rem;
-  }
 }
 
 .mainNav {
@@ -96,9 +85,6 @@ body.false .mobileNav {
     display: flex;
     gap: 1rem;
     font-weight: 600;
-  }
-  &__icon {
-    font-size: 1.4rem;
   }
 }
 

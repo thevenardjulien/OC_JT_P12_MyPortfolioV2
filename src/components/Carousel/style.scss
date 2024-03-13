@@ -16,7 +16,6 @@
 
 .project {
   flex: 1;
-  align-self: flex-start;
   &__img {
     width: 250px;
     height: 250px;
@@ -32,6 +31,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    line-height: 35px;
     &-img {
       max-width: 20px;
       max-height: 20px;

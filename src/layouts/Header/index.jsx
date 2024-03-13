@@ -69,10 +69,7 @@ const Header = () => {
           </span>
           <ul className="mobileNav__ul">
             <li className="mobileNav__li" onClick={() => window.scrollTo(0, 0)}>
-              <FontAwesomeIcon
-                icon={faHouse}
-                className="mobileNav__icon icon"
-              />
+              <FontAwesomeIcon icon={faHouse} className="icon" />
             </li>
 
             <li className="mobileNav__li">

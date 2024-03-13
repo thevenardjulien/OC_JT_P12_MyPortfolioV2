@@ -55,13 +55,9 @@ const Carousel = () => {
                     <h3 className="project__title">
                       {projet.title}
                       {projet.github === true ? (
-                        <Link
-                          to={projet.githubLink}
-                          target="_Blank"
-                          className="project__icon icon"
-                        >
+                        <span className="project__icon icon">
                           <FontAwesomeIcon icon={faGithub} />
-                        </Link>
+                        </span>
                       ) : (
                         ""
                       )}
