@@ -31,6 +31,7 @@ body.false .ContactForm__button {
   }
   &__button:hover {
     cursor: pointer;
+    text-decoration: underline;
   }
 }
 
