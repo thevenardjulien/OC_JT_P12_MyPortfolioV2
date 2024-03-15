@@ -88,6 +88,13 @@ body.false .mobileNav {
   }
 }
 
+.mobileNav a,
+.mainNav a {
+  &:hover {
+    color: $primary-accent;
+  }
+}
+
 @media screen and (min-width: 1024px) {
   .mobileNavBtn {
     display: none;

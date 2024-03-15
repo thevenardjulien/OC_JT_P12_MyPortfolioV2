@@ -7,10 +7,30 @@ import { useState } from "react";
 import { projets } from "./projets.data";
 import Card from "../Card";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
+import { useEffect } from "react";
 
 const Carousel = () => {
   const [sliceFirstValue, setSliceFirstValue] = useState(0);
   const [sliceSecondValue, setSliceSecondValue] = useState(3);
+  const [lgScreen, setLgScreen] = useState(undefined);
+
+  useEffect(() => {
+    function handleResize() {
+      if (window.innerWidth > 1024) {
+        setLgScreen(true);
+        setSliceFirstValue(0);
+        setSliceSecondValue(3);
+      } else {
+        setLgScreen(false);
+        setSliceFirstValue(0);
+        setSliceSecondValue(1);
+      }
+    }
+
+    handleResize();
+
+    window.addEventListener("resize", handleResize);
+  }, []);
 
   const handleLeft = () => {
     if (sliceFirstValue >= 1) {
@@ -55,7 +75,7 @@ const Carousel = () => {
                     <h3 className="project__title">
                       {projet.title}
                       {projet.github === true ? (
-                        <span className="project__icon icon">
+                        <span className="project__icon">
                           <FontAwesomeIcon icon={faGithub} />
                         </span>
                       ) : (

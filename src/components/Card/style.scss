@@ -3,11 +3,18 @@
 body.true .card {
   background-color: $primary-background;
   color: $primary-font;
+  &:hover {
+    background-color: $primary-accent;
+    color: $secondary-font;
+  }
 }
 
 body.false .card {
   background-color: $secondary-background;
   color: $secondary-font;
+  &:hover {
+    background-color: $primary-accent;
+  }
 }
 
 .card {

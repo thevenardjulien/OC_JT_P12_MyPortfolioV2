@@ -4,13 +4,13 @@ import { useContext } from "react";
 import { DarkModeContext } from "../../context/DarkModeContext";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faMoon } from "@fortawesome/free-regular-svg-icons";
-import { faSun } from "@fortawesome/free-regular-svg-icons";
 import { NavLink } from "react-router-dom";
 import { faHouse } from "@fortawesome/free-solid-svg-icons";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
 import { useState } from "react";
 import { useEffect } from "react";
 import { faSquareXmark } from "@fortawesome/free-solid-svg-icons";
+import { faSun } from "@fortawesome/free-regular-svg-icons";
 
 const Header = () => {
   const { darkMode, toggleDarkMode } = useContext(DarkModeContext);
@@ -50,9 +50,9 @@ const Header = () => {
           onClick={() => toggleDarkMode()}
         >
           {darkMode ? (
-            <FontAwesomeIcon icon={faMoon} />
-          ) : (
             <FontAwesomeIcon icon={faSun} />
+          ) : (
+            <FontAwesomeIcon icon={faMoon} />
           )}
         </div>
       </div>
@@ -90,11 +90,11 @@ const Header = () => {
                 to="/"
                 onClick={() =>
                   document
-                    .querySelector("#skills")
+                    .querySelector("#projects")
                     .scrollIntoView({ block: "center" })
                 }
               >
-                Compétences
+                Projets
               </NavLink>
             </li>
 
@@ -103,11 +103,11 @@ const Header = () => {
                 to="/"
                 onClick={() =>
                   document
-                    .querySelector("#projects")
+                    .querySelector("#skills")
                     .scrollIntoView({ block: "center" })
                 }
               >
-                Projets
+                Compétences
               </NavLink>
             </li>
 
@@ -149,11 +149,11 @@ const Header = () => {
                 to="/"
                 onClick={() =>
                   document
-                    .querySelector("#skills")
+                    .querySelector("#projects")
                     .scrollIntoView({ block: "center" })
                 }
               >
-                Compétences
+                Projets
               </NavLink>
             </li>
 
@@ -162,11 +162,11 @@ const Header = () => {
                 to="/"
                 onClick={() =>
                   document
-                    .querySelector("#projects")
+                    .querySelector("#skills")
                     .scrollIntoView({ block: "center" })
                 }
               >
-                Projets
+                Compétences
               </NavLink>
             </li>
 

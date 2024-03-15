@@ -1,15 +1,16 @@
+@use "../../scss/color.scss" as *;
+
 .projects {
+  max-width: 100%;
   display: flex;
-  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   gap: 50px;
   &__arrow {
     font-size: 3rem;
     cursor: pointer;
-    &-left {
-      transform: rotate(90deg);
-    }
-    &-right {
-      transform: rotate(90deg);
+    &:hover {
+      color: $primary-accent;
     }
   }
 }
@@ -49,7 +50,6 @@
 @media screen and (min-width: 1024px) {
   .projects {
     flex-direction: row;
-    align-items: center;
     &__arrow {
       &-left {
         transform: rotate(0);

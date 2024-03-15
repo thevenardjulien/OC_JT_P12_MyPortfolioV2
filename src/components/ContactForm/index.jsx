@@ -43,47 +43,45 @@ const ContactForm = () => {
   return (
     <>
       <h2>Contact</h2>
-      <Card
-        content={
-          <form
-            ref={form}
-            className="ContactForm"
-            onSubmit={(e) => handleSubmit(e)}
-          >
-            <div className="ContactForm__UserWrapper">
-              <input
-                className="ContactForm__input"
-                type="text"
-                id="userName"
-                name="userName"
-                placeholder="Name"
-                required
-                minLength={3}
-                maxLength={126}
-              />
-              <input
-                className="ContactForm__input"
-                type="email"
-                id="email"
-                name="email"
-                placeholder="Email"
-                required
-                maxLength={126}
-              />
-            </div>
-            <textarea
-              className="ContactForm__textarea"
-              id="message"
-              name="message"
-              placeholder="Message"
+      <div className="formWrapper">
+        <form
+          ref={form}
+          className="ContactForm"
+          onSubmit={(e) => handleSubmit(e)}
+        >
+          <div className="ContactForm__UserWrapper">
+            <input
+              className="ContactForm__input"
+              type="text"
+              id="userName"
+              name="userName"
+              placeholder="Nom"
               required
+              minLength={3}
+              maxLength={126}
             />
-            <button className="button ContactForm__button" type="submit">
-              Submit
-            </button>
-          </form>
-        }
-      />
+            <input
+              className="ContactForm__input"
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Email"
+              required
+              maxLength={126}
+            />
+          </div>
+          <textarea
+            className="ContactForm__textarea"
+            id="message"
+            name="message"
+            placeholder="Message"
+            required
+          />
+          <button className="button ContactForm__button" type="submit">
+            Envoyer
+          </button>
+        </form>
+      </div>
     </>
   );
 };

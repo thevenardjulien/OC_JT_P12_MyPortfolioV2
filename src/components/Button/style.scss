@@ -24,9 +24,16 @@ button {
 body.true .button {
   background-color: $primary-background;
   color: $primary-font;
+  &:hover {
+    background-color: $primary-accent;
+    color: $secondary-font;
+  }
 }
 
 body.false .button {
   background-color: $secondary-background;
   color: $secondary-font;
+  &:hover {
+    background-color: $primary-accent;
+  }
 }

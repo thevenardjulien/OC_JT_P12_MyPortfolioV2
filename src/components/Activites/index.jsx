@@ -1,8 +1,6 @@
-import { faDiagramProject } from "@fortawesome/free-solid-svg-icons";
-import { faCode } from "@fortawesome/free-solid-svg-icons";
-import { faPen } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import "./style.scss";
+import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 
 const Activites = () => {
   return (
@@ -10,21 +8,21 @@ const Activites = () => {
       <ul className="activites">
         <li>
           <span className="activites__icon">
-            <FontAwesomeIcon icon={faCode} />
+            <FontAwesomeIcon icon={faArrowRight} />
           </span>
           <strong>Réaliser</strong>, <strong>améliorer</strong> et{" "}
           <strong>animer</strong> des sites web.
         </li>
         <li>
           <span className="activites__icon">
-            <FontAwesomeIcon icon={faPen} />
+            <FontAwesomeIcon icon={faArrowRight} />
           </span>
           <strong>Concevoir les éléments graphiques</strong> d’une interface
           utilisateur et de supports de communication.
         </li>
         <li>
           <span className="activites__icon">
-            <FontAwesomeIcon icon={faDiagramProject} />
+            <FontAwesomeIcon icon={faArrowRight} />
           </span>
           Contribuer à la <strong>gestion et au suivi d’un projet</strong> de
           communication numérique.

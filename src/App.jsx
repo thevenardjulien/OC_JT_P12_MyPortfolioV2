@@ -15,6 +15,9 @@ function App() {
         <Hero />
       </main>
       <section className="about" id="about">
+        <dialog open>
+          <p>HELLO</p>
+        </dialog>
         <h2>À propos</h2>
         <div className="about__content">
           <div className="about__section about__section-left">
@@ -46,11 +49,11 @@ function App() {
           </div>
         </div>
       </section>
-      <section className="skills" id="skills">
-        <Skills />
-      </section>
       <section className="projects" id="projects">
         <Projects />
+      </section>
+      <section className="skills" id="skills">
+        <Skills />
       </section>
       <section className="contact" id="contact">
         <ContactForm />

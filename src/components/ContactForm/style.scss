@@ -8,6 +8,21 @@ body.true .ContactForm__button {
 body.false .ContactForm__button {
   background-color: $primary-background;
   color: $primary-font;
+  &:hover {
+    color: $secondary-font;
+  }
+}
+
+body.true .formWrapper {
+  background-color: $primary-background;
+}
+
+body.false .formWrapper {
+  background-color: $secondary-background;
+}
+
+.formWrapper {
+  padding: 20px;
 }
 
 .ContactForm {
@@ -28,10 +43,6 @@ body.false .ContactForm__button {
     display: flex;
     flex-direction: column;
     gap: 10px;
-  }
-  &__button:hover {
-    cursor: pointer;
-    text-decoration: underline;
   }
 }
 

@@ -1,4 +1,6 @@
 import { useState } from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faChevronUp } from "@fortawesome/free-solid-svg-icons";
 import "./style.scss";
 
 const Collapse = ({ title, content }) => {
@@ -20,6 +22,13 @@ const Collapse = ({ title, content }) => {
       >
         {content}
       </div>
+      <FontAwesomeIcon
+        icon={faChevronUp}
+        className={
+          hidden ? "collapse__chevron-inactive" : "collapse__chevron-active"
+        }
+        onClick={handleClick}
+      />
     </div>
   );
 };
