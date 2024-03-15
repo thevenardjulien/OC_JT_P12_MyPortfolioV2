@@ -10,7 +10,7 @@ section.about,
 section.skills,
 section.projects,
 section.contact {
-  margin: 50px auto;
+  margin-block: 50px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -50,6 +50,6 @@ section.contact {
   section.skills,
   section.projects,
   section.contact {
-    margin: 100px auto;
+    margin-block: 100px;
   }
 }

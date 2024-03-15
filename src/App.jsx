@@ -15,9 +15,6 @@ function App() {
         <Hero />
       </main>
       <section className="about" id="about">
-        <dialog open>
-          <p>HELLO</p>
-        </dialog>
         <h2>À propos</h2>
         <div className="about__content">
           <div className="about__section about__section-left">

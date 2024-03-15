@@ -23,7 +23,7 @@ const Carousel = () => {
       } else {
         setLgScreen(false);
         setSliceFirstValue(0);
-        setSliceSecondValue(1);
+        setSliceSecondValue(3);
       }
     }
 
@@ -46,7 +46,7 @@ const Carousel = () => {
   };
   return (
     <div className="projects">
-      {projets.length > 3 && (
+      {projets.length > 3 && lgScreen && (
         <FontAwesomeIcon
           icon={faAngleLeft}
           className={
@@ -88,7 +88,7 @@ const Carousel = () => {
             />
           );
         })}
-      {projets.length > 3 && (
+      {projets.length > 3 && lgScreen && (
         <FontAwesomeIcon
           icon={faAngleRight}
           className={
