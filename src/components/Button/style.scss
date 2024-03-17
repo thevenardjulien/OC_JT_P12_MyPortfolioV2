@@ -19,6 +19,9 @@ button {
   &__icon {
     font-size: 1.4rem;
   }
+  &__active {
+    background-color: $primary-accent !important;
+  }
 }
 
 body.true .button {

@@ -44,6 +44,7 @@ const Carousel = () => {
       setSliceSecondValue(() => sliceSecondValue + 1);
     }
   };
+
   return (
     <div className="projects">
       {projets.length > 3 && lgScreen && (
@@ -67,11 +68,22 @@ const Carousel = () => {
               content={
                 <div className="project">
                   <Link to={projet.url} target="_Blank">
+                    {projet.stack.map((stack, index) => {
+                      return (
+                        <img
+                          key={index}
+                          className={`project__stackImg project__stackImg${index}`}
+                          src={stack.img}
+                          alt={stack.alt}
+                        />
+                      );
+                    })}
                     <img
                       className="project__img"
                       src={projet.img}
                       alt={projet.title}
                     />
+
                     <h3 className="project__title">
                       {projet.title}
                       {projet.github === true ? (
@@ -82,6 +94,7 @@ const Carousel = () => {
                         ""
                       )}
                     </h3>
+                    <p className="project__description">{projet.description}</p>
                   </Link>
                 </div>
               }

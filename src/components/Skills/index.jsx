@@ -20,13 +20,16 @@ const Skills = () => {
       <h2>Compétences</h2>
       <div className="skillFilters">
         <span onClick={handleCat}>
-          <Button title="Tout" url="#" />
+          <Button title="Tout" active={category === "tout" ? true : false} />
         </span>
         <span onClick={handleCat}>
-          <Button title="Dev" url="#" />
+          <Button title="Dev" active={category === "dev" ? true : false} />
         </span>
         <span onClick={handleCat}>
-          <Button title="Design" />
+          <Button
+            title="Design"
+            active={category === "design" ? true : false}
+          />
         </span>
       </div>
       <div className="skills">
