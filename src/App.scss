@@ -16,6 +16,19 @@ section.contact {
   justify-content: center;
   align-items: center;
   gap: 20px;
+  animation: pop linear;
+  animation-timeline: view();
+  animation-range-start: -500px;
+  animation-range-end: 500px;
+}
+
+@keyframes pop {
+  from {
+    scale: 0;
+  }
+  to {
+    scale: 1;
+  }
 }
 
 .about {

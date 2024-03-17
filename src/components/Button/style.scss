@@ -21,6 +21,7 @@ button {
   }
   &__active {
     background-color: $primary-accent !important;
+    color: $secondary-font !important;
   }
 }
 
