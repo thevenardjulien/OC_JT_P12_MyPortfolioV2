@@ -4,7 +4,7 @@ import List from "./list.data";
 
 const LinksList = () => {
   return (
-    <div className="Links">
+    <div className="Links" tabIndex={false}>
       {[...List].map((item, index) => {
         return (
           <Button

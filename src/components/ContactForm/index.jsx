@@ -2,6 +2,7 @@ import { useRef } from "react";
 import { toast } from "sonner";
 import emailjs from "@emailjs/browser";
 import "./style.scss";
+import { Toaster } from "sonner";
 
 const ContactForm = () => {
   const form = useRef(null);
@@ -39,9 +40,10 @@ const ContactForm = () => {
       );
     }
   };
+  <Toaster richColors />;
   return (
     <>
-      <h2>Contact</h2>
+      <h2 tabIndex={1}>Contact</h2>
       <div className="formWrapper">
         <form
           ref={form}

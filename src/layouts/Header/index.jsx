@@ -40,6 +40,7 @@ const Header = () => {
     <header>
       <div className="logoWrapper">
         <img
+          tabIndex={1}
           className="logoWrapper__img"
           src={avatar}
           alt="avatar"
@@ -48,6 +49,7 @@ const Header = () => {
         <div
           className="logoWrapper__icon icon"
           onClick={() => toggleDarkMode()}
+          tabIndex={1}
         >
           {darkMode ? (
             <FontAwesomeIcon icon={faSun} />
@@ -57,7 +59,11 @@ const Header = () => {
         </div>
       </div>
       <div>
-        <div className="mobileNavBtn icon" onClick={handleMobileNavBtn}>
+        <div
+          className="mobileNavBtn icon"
+          onClick={handleMobileNavBtn}
+          tabIndex={1}
+        >
           <FontAwesomeIcon icon={faBars} />
         </div>
         <nav
@@ -128,10 +134,14 @@ const Header = () => {
 
         <nav className="mainNav">
           <ul className="mainNav__ul">
-            <li className="mainNav__li" onClick={() => window.scrollTo(0, 0)}>
+            <li
+              className="mainNav__li"
+              tabIndex={1}
+              onClick={() => window.scrollTo(0, 0)}
+            >
               <FontAwesomeIcon icon={faHouse} className="mainNav__icon icon" />
             </li>
-            <li className="mainNav__li">
+            <li className="mainNav__li" tabIndex={1}>
               <NavLink
                 to="/"
                 onClick={() =>
@@ -144,7 +154,7 @@ const Header = () => {
               </NavLink>
             </li>
 
-            <li className="mainNav__li">
+            <li className="mainNav__li" tabIndex={1}>
               <NavLink
                 to="/"
                 onClick={() =>
@@ -157,7 +167,7 @@ const Header = () => {
               </NavLink>
             </li>
 
-            <li className="mainNav__li">
+            <li className="mainNav__li" tabIndex={1}>
               <NavLink
                 to="/"
                 onClick={() =>
@@ -170,7 +180,7 @@ const Header = () => {
               </NavLink>
             </li>
 
-            <li className="mainNav__li">
+            <li className="mainNav__li" tabIndex={1}>
               <NavLink
                 to="/"
                 onClick={() =>

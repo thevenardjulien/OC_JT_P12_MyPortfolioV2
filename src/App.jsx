@@ -15,7 +15,7 @@ function App() {
         <Hero />
       </main>
       <section className="about" id="about">
-        <h2>À propos</h2>
+        <h2 tabIndex="1">À propos</h2>
         <div className="about__content">
           <div className="about__section about__section-left">
             <Accordion />

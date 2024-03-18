@@ -17,7 +17,7 @@ const Skills = () => {
 
   return (
     <>
-      <h2>Compétences</h2>
+      <h2 tabIndex={1}>Compétences</h2>
       <div className="skillFilters">
         <span onClick={handleCat}>
           <Button title="Tout" active={category === "tout" ? true : false} />

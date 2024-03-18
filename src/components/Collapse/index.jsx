@@ -10,7 +10,7 @@ const Collapse = ({ title, content }) => {
   };
   return (
     <div className="collapse">
-      <div className="collapse__title" onClick={handleClick}>
+      <div className="collapse__title" onClick={handleClick} tabIndex={1}>
         <h3>{title}</h3>
       </div>
       <div
