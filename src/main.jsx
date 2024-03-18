@@ -7,7 +7,7 @@ import "./main.scss";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <DarkModeProvider>
-    <Toaster />
+    <Toaster richColors />
     <RouterProvider router={router} />
   </DarkModeProvider>
 );

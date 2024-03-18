@@ -40,7 +40,6 @@ const ContactForm = () => {
       );
     }
   };
-  <Toaster richColors />;
   return (
     <>
       <h2 tabIndex={1}>Contact</h2>
