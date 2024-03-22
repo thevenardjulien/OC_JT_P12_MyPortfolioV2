@@ -8,6 +8,7 @@ import { projets } from "./projets.data";
 import Card from "../Card";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import { useEffect } from "react";
+import Button from "../Button";
 
 const Carousel = () => {
   const [sliceFirstValue, setSliceFirstValue] = useState(0);
@@ -23,7 +24,7 @@ const Carousel = () => {
       } else {
         setLgScreen(false);
         setSliceFirstValue(0);
-        setSliceSecondValue(3);
+        setSliceSecondValue(2);
       }
     }
 
@@ -43,6 +44,10 @@ const Carousel = () => {
       setSliceFirstValue(() => sliceFirstValue + 1);
       setSliceSecondValue(() => sliceSecondValue + 1);
     }
+  };
+
+  const mobileShowMore = () => {
+    setSliceSecondValue(() => sliceSecondValue + 2);
   };
 
   return (
@@ -102,6 +107,11 @@ const Carousel = () => {
             />
           );
         })}
+      {projets.length > 2 && !lgScreen && sliceSecondValue < projets.length && (
+        <span onClick={mobileShowMore}>
+          <Button title="Afficher +" />
+        </span>
+      )}
       {projets.length > 3 && lgScreen && (
         <FontAwesomeIcon
           tabIndex={1}
