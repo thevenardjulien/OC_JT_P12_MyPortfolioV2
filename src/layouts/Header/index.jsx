@@ -40,7 +40,7 @@ const Header = () => {
     <header>
       <div className="logoWrapper">
         <img
-          tabIndex={1}
+          tabIndex="0"
           className="logoWrapper__img"
           src={avatar}
           alt="avatar"
@@ -49,7 +49,7 @@ const Header = () => {
         <div
           className="logoWrapper__icon icon"
           onClick={() => toggleDarkMode()}
-          tabIndex={1}
+          tabIndex="0"
         >
           {darkMode ? (
             <FontAwesomeIcon icon={faSun} />
@@ -62,7 +62,7 @@ const Header = () => {
         <div
           className="mobileNavBtn icon"
           onClick={handleMobileNavBtn}
-          tabIndex={1}
+          tabIndex="0"
         >
           <FontAwesomeIcon icon={faBars} />
         </div>
@@ -149,12 +149,12 @@ const Header = () => {
           <ul className="mainNav__ul">
             <li
               className="mainNav__li"
-              tabIndex={1}
+              tabIndex="0"
               onClick={() => window.scrollTo(0, 0)}
             >
               <FontAwesomeIcon icon={faHouse} className="mainNav__icon icon" />
             </li>
-            <li className="mainNav__li" tabIndex={1}>
+            <li className="mainNav__li" tabIndex="0">
               <NavLink
                 to="/"
                 onClick={() =>
@@ -167,7 +167,7 @@ const Header = () => {
               </NavLink>
             </li>
 
-            <li className="mainNav__li" tabIndex={1}>
+            <li className="mainNav__li" tabIndex="0">
               <NavLink
                 to="/"
                 onClick={() =>
@@ -180,7 +180,7 @@ const Header = () => {
               </NavLink>
             </li>
 
-            <li className="mainNav__li" tabIndex={1}>
+            <li className="mainNav__li" tabIndex="0">
               <NavLink
                 to="/"
                 onClick={() =>
@@ -193,7 +193,7 @@ const Header = () => {
               </NavLink>
             </li>
 
-            <li className="mainNav__li" tabIndex={1}>
+            <li className="mainNav__li" tabIndex="0">
               <NavLink
                 to="/"
                 onClick={() =>
@@ -206,7 +206,7 @@ const Header = () => {
               </NavLink>
             </li>
 
-            <li className="mainNav__li" tabIndex={1}>
+            <li className="mainNav__li" tabIndex="0">
               <NavLink
                 to="/"
                 onClick={() =>

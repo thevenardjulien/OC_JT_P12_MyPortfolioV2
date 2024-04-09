@@ -20,7 +20,7 @@ export const temoignages = [
   },
   {
     avatar: arthurAvatar,
-    user: "Beaucamp Arthur",
+    user: "Arthur Beaucamp",
     job: "Développeur Front-end | Mentor OpenClassrooms",
     stars: 5,
     review: `J'ai eu le plaisir d'accompagner et conseiller Julien lors de son apprentissage au métier d'Intégrateur Web via la plateforme de formation OpenClassrooms. En plus d'être quelqu'un de très sympathique, Julien est curieux, rigoureux et appliqué dans son travail. Je n'ai aucun doute sur le fait que son manque d'expérience dans le métier soit très bientôt comblé par sa soif de connaissances !`,

@@ -5,7 +5,7 @@ import "./style.scss";
 const Testimonials = () => {
   return (
     <div className="testimonialsWrapper">
-      <h2 tabIndex={1}>Témoignages</h2>
+      <h2 tabIndex="0">Témoignages</h2>
       <div className="testimonials">
         {temoignages.map((temoignage, index) => {
           return <Testimonial {...temoignage} key={index} />;

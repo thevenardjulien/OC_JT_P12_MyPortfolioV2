@@ -3,7 +3,7 @@ import Carousel from "../Carousel";
 const Projects = () => {
   return (
     <>
-      <h2 tabIndex={1}>Projets</h2>
+      <h2 tabIndex="0">Projets</h2>
       <Carousel />
     </>
   );

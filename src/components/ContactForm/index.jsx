@@ -41,7 +41,7 @@ const ContactForm = () => {
   };
   return (
     <>
-      <h2 tabIndex={1}>Contact</h2>
+      <h2 tabIndex="0">Contact</h2>
       <div className="formWrapper">
         <form
           ref={form}

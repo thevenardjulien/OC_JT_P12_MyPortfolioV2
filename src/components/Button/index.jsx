@@ -4,7 +4,7 @@ import "./style.scss";
 const Button = ({ title, icon, url, target, active }) => {
   return (
     <button
-      tabIndex="1"
+      tabIndex="0"
       className={active ? "button button__active" : "button"}
     >
       <Link to={url} target={target}>

@@ -11,7 +11,7 @@ const Testimonial = ({ avatar, user, job, stars, review }) => {
     <div className="testimonial">
       <img className="testimonial__avatar" src={avatar} alt="avatar" />
       <div className="testimonial__user">
-        <h4 className="testimonial__username">{user}</h4>
+        <h3 className="testimonial__username">{user}</h3>
         <p className="testimonial__job">{job}</p>
       </div>
       <span className="testimonial__stars">{starIcons}</span>

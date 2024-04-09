@@ -54,7 +54,7 @@ const Carousel = () => {
     <div className="projects">
       {projets.length > 3 && lgScreen && (
         <FontAwesomeIcon
-          tabIndex={1}
+          tabIndex="0"
           icon={faAngleLeft}
           className={
             sliceFirstValue === 0
@@ -90,7 +90,7 @@ const Carousel = () => {
                       alt={projet.title}
                     />
 
-                    <h3 className="project__title" tabIndex={1}>
+                    <h3 className="project__title" tabIndex="0">
                       {projet.title}
                       {projet.github === true ? (
                         <span className="project__icon">
@@ -114,7 +114,7 @@ const Carousel = () => {
       )}
       {projets.length > 3 && lgScreen && (
         <FontAwesomeIcon
-          tabIndex={1}
+          tabIndex="0"
           icon={faAngleRight}
           className={
             sliceSecondValue === projets.length
