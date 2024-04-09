@@ -1,0 +1,47 @@
+@use "../../scss/color.scss" as *;
+
+body.false .testimonial {
+  background-color: $secondary-background;
+  color: $secondary-font;
+  padding: 20px;
+  border-radius: 6px;
+}
+body.true .testimonial {
+  background-color: $primary-background;
+  color: $primary-font;
+  padding: 20px;
+  border-radius: 6px;
+}
+
+.testimonial {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  &__user {
+    text-align: center;
+    gap: 10px;
+    padding-top: 40px;
+  }
+  &__stars {
+    background-color: red;
+    background-clip: text;
+    -webkit-background-clip: text;
+  }
+  &__avatar {
+    position: absolute;
+    top: -50px;
+    height: 100px;
+    width: auto;
+  }
+  &__username {
+    font-size: 1.2rem;
+  }
+  &__job {
+    font-style: italic;
+  }
+  &__review {
+    text-align: center;
+  }
+}

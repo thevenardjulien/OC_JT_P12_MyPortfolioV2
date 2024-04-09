@@ -2,7 +2,6 @@ import { useRef } from "react";
 import { toast } from "sonner";
 import emailjs from "@emailjs/browser";
 import "./style.scss";
-import { Toaster } from "sonner";
 
 const ContactForm = () => {
   const form = useRef(null);

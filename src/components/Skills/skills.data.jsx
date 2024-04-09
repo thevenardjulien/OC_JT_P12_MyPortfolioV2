@@ -1,11 +1,11 @@
-import photoshopLogo from "../../assets/img/skills/photoshop.png";
-import illustratorLogo from "../../assets/img/skills/illustrator.png";
-import javascriptLogo from "../../assets/img/skills/javascript.png";
-import reactLogo from "../../assets/img/skills/react.png";
-import typescriptLogo from "../../assets/img/skills/typescript.png";
-import sassLogo from "../../assets/img/skills/sass.png";
-import premiereproLogo from "../../assets/img/skills/premierepro.png";
-import figmaLogo from "../../assets/img/skills/figma.png";
+import photoshopLogo from "../../assets/img/skills/photoshop.webp";
+import illustratorLogo from "../../assets/img/skills/illustrator.webp";
+import javascriptLogo from "../../assets/img/skills/javascript.webp";
+import reactLogo from "../../assets/img/skills/react.webp";
+import typescriptLogo from "../../assets/img/skills/typescript.webp";
+import sassLogo from "../../assets/img/skills/sass.webp";
+import premiereproLogo from "../../assets/img/skills/premierepro.webp";
+import figmaLogo from "../../assets/img/skills/figma.webp";
 
 export const skills = [
   {

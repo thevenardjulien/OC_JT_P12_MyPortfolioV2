@@ -1,12 +1,11 @@
-import sophieImage from "../../assets/img/projets/sophiebluel/sophie-bluel.png";
-import kasaImage from "../../assets/img/projets/kasa/kasa.png";
-import ninaImage from "../../assets/img/projets/ninacarducci/nina.png";
-import eventsImage from "../../assets/img/projets/77events/77events.png";
-import argentBankImage from "../../assets/img/projets/argentbank/argentbank.png";
-import javascriptLogo from "../../assets/img/skills/javascript.png";
-import reactLogo from "../../assets/img/skills/react.png";
-import typescriptLogo from "../../assets/img/skills/typescript.png";
-import sassLogo from "../../assets/img/skills/sass.png";
+import sophieImage from "../../assets/img/projets/sophiebluel/sophie-bluel.webp";
+import kasaImage from "../../assets/img/projets/kasa/kasa.webp";
+import ninaImage from "../../assets/img/projets/ninacarducci/nina.webp";
+import eventsImage from "../../assets/img/projets/77events/77events.webp";
+import argentBankImage from "../../assets/img/projets/argentbank/argentbank.webp";
+import javascriptLogo from "../../assets/img/skills/javascript.webp";
+import reactLogo from "../../assets/img/skills/react.webp";
+import sassLogo from "../../assets/img/skills/sass.webp";
 
 export const projets = [
   {

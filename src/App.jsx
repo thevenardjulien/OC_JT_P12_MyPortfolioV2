@@ -6,6 +6,7 @@ import Skills from "./components/Skills";
 import Projects from "./components/Projects";
 import ContactForm from "./components/ContactForm";
 import Footer from "./layouts/Footer";
+import Testimonials from "./components/Testimonials";
 
 function App() {
   return (
@@ -45,6 +46,9 @@ function App() {
             </span>
           </div>
         </div>
+      </section>
+      <section className="testimonials" id="testimonials">
+        <Testimonials />
       </section>
       <section className="projects" id="projects">
         <Projects />

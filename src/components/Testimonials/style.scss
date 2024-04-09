@@ -1,0 +1,26 @@
+.testimonialsWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 70px;
+}
+
+.testimonials {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-auto-rows: 1fr;
+  gap: 100px;
+}
+
+@media screen and (min-width: 768px) {
+  .testimonials {
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 50px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .testimonials {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}

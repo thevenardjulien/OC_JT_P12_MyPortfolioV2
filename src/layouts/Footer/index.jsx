@@ -4,6 +4,7 @@ import { faEnvelope } from "@fortawesome/free-regular-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Link } from "react-router-dom";
 import "./style.scss";
+import { faBehance } from "@fortawesome/free-brands-svg-icons";
 
 const Footer = () => {
   return (
@@ -21,6 +22,11 @@ const Footer = () => {
             target="_Blank"
           >
             <FontAwesomeIcon icon={faLinkedin} className="footer__icon icon" />
+          </Link>
+        </li>
+        <li>
+          <Link to="https://www.behance.net/julienthevenard1" target="_Blank">
+            <FontAwesomeIcon icon={faBehance} className="footer__icon icon" />
           </Link>
         </li>
         <li>

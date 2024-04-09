@@ -1,5 +1,5 @@
 import fr from "../../assets/img/fr.webp";
-import en from "../../assets/img/uk.png";
+import en from "../../assets/img/uk.webp";
 import "./style.scss";
 
 const Languages = () => {
@@ -11,7 +11,7 @@ const Languages = () => {
       </span>
       <span className="languages__wrapper">
         <img className="languages__img" src={en} alt="fr" />
-        Anglais B2
+        Anglais C1
       </span>
     </div>
   );

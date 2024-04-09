@@ -96,6 +96,19 @@ const Header = () => {
                 to="/"
                 onClick={() =>
                   document
+                    .querySelector("#testimonials")
+                    .scrollIntoView({ block: "center" })
+                }
+              >
+                Témoignages
+              </NavLink>
+            </li>
+
+            <li className="mobileNav__li">
+              <NavLink
+                to="/"
+                onClick={() =>
+                  document
                     .querySelector("#projects")
                     .scrollIntoView({ block: "center" })
                 }
@@ -151,6 +164,19 @@ const Header = () => {
                 }
               >
                 À propos
+              </NavLink>
+            </li>
+
+            <li className="mainNav__li" tabIndex={1}>
+              <NavLink
+                to="/"
+                onClick={() =>
+                  document
+                    .querySelector("#testimonials")
+                    .scrollIntoView({ block: "center" })
+                }
+              >
+                Témoignages
               </NavLink>
             </li>
 
