@@ -24,8 +24,9 @@ const Activites = () => {
           <span className="activites__icon">
             <FontAwesomeIcon icon={faArrowRight} />
           </span>
-          Contribuer à la <strong>gestion et au suivi d’un projet</strong> de
-          communication numérique.
+          Contribuer à la <strong>gestion</strong> et au <strong>suivi</strong>{" "}
+          d'un <strong>projet de communication numérique</strong> afin d'assurer
+          son bon déroulement.
         </li>
       </ul>
     </>
