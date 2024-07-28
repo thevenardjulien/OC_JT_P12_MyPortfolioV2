@@ -1,7 +1,7 @@
 import { skills } from "./skills.data";
 import Button from "../Button";
-import "./style.scss";
 import { useState } from "react";
+import "./style.scss";
 
 const Skills = () => {
   const [category, setCategory] = useState("tout");

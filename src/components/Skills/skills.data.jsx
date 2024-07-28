@@ -3,9 +3,9 @@ import illustratorLogo from "../../assets/img/skills/illustrator.webp";
 import javascriptLogo from "../../assets/img/skills/javascript.webp";
 import reactLogo from "../../assets/img/skills/react.webp";
 import typescriptLogo from "../../assets/img/skills/typescript.webp";
-import sassLogo from "../../assets/img/skills/sass.webp";
 import premiereproLogo from "../../assets/img/skills/premierepro.webp";
 import figmaLogo from "../../assets/img/skills/figma.webp";
+import nextjsLogo from "../../assets/img/skills/nextjs.webp";
 
 export const skills = [
   {
@@ -29,11 +29,6 @@ export const skills = [
     category: "design",
   },
   {
-    logo: sassLogo,
-    name: "Sass",
-    category: "dev",
-  },
-  {
     logo: javascriptLogo,
     name: "JavaScript",
     category: "dev",
@@ -46,6 +41,11 @@ export const skills = [
   {
     logo: typescriptLogo,
     name: "TypeScript",
+    category: "dev",
+  },
+  {
+    logo: nextjsLogo,
+    name: "Next.js",
     category: "dev",
   },
 ];

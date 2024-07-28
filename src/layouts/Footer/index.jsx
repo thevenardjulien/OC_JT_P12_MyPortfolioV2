@@ -3,8 +3,8 @@ import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import { faEnvelope } from "@fortawesome/free-regular-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Link } from "react-router-dom";
-import "./style.scss";
 import { faBehance } from "@fortawesome/free-brands-svg-icons";
+import "./style.scss";
 
 const Footer = () => {
   return (

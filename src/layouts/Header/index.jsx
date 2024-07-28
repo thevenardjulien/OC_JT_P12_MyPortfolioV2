@@ -5,12 +5,12 @@ import { DarkModeContext } from "../../context/DarkModeContext";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faMoon } from "@fortawesome/free-regular-svg-icons";
 import { NavLink } from "react-router-dom";
-import { faHouse } from "@fortawesome/free-solid-svg-icons";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
 import { useState } from "react";
 import { useEffect } from "react";
 import { faSquareXmark } from "@fortawesome/free-solid-svg-icons";
 import { faSun } from "@fortawesome/free-regular-svg-icons";
+import { HashLink as Link } from "react-router-hash-link";
 
 const Header = () => {
   const { darkMode, toggleDarkMode } = useContext(DarkModeContext);
@@ -35,6 +35,12 @@ const Header = () => {
       setDisplayMobileNav(false);
     });
   }, []);
+
+  const scrollWithOffset = (el) => {
+    const yCoordinate = el.getBoundingClientRect().top + window.scrollY;
+    const yOffset = -100;
+    window.scrollTo({ top: yCoordinate + yOffset, behavior: "smooth" });
+  };
 
   return (
     <header>
@@ -74,86 +80,36 @@ const Header = () => {
             <FontAwesomeIcon icon={faSquareXmark} />
           </span>
           <ul className="mobileNav__ul">
-            <li className="mobileNav__li" onClick={() => window.scrollTo(0, 0)}>
-              <FontAwesomeIcon icon={faHouse} className="icon" />
-            </li>
-
             <li className="mobileNav__li">
-              <NavLink
-                to="/"
-                onClick={() =>
-                  document
-                    .querySelector("#about")
-                    .scrollIntoView({ block: "center" })
-                }
-              >
+              <Link to="#about" scroll={scrollWithOffset}>
                 À propos
-              </NavLink>
+              </Link>
             </li>
-
             <li className="mobileNav__li">
-              <NavLink
-                to="/"
-                onClick={() =>
-                  document
-                    .querySelector("#testimonials")
-                    .scrollIntoView({ block: "center" })
-                }
-              >
+              <Link to="#testimonials" scroll={scrollWithOffset}>
                 Témoignages
-              </NavLink>
+              </Link>
             </li>
-
             <li className="mobileNav__li">
-              <NavLink
-                to="/"
-                onClick={() =>
-                  document
-                    .querySelector("#projects")
-                    .scrollIntoView({ block: "center" })
-                }
-              >
+              <Link to="#projects" scroll={scrollWithOffset}>
                 Projets
-              </NavLink>
+              </Link>
             </li>
-
             <li className="mobileNav__li">
-              <NavLink
-                to="/"
-                onClick={() =>
-                  document
-                    .querySelector("#skills")
-                    .scrollIntoView({ block: "center" })
-                }
-              >
+              <Link to="#skills" scroll={scrollWithOffset}>
                 Compétences
-              </NavLink>
+              </Link>
             </li>
-
             <li className="mobileNav__li">
-              <NavLink
-                to="/"
-                onClick={() =>
-                  document
-                    .querySelector("#contact")
-                    .scrollIntoView({ block: "center" })
-                }
-              >
+              <Link to="#contact" scroll={scrollWithOffset}>
                 Contact
-              </NavLink>
+              </Link>
             </li>
           </ul>
         </nav>
 
         <nav className="mainNav">
           <ul className="mainNav__ul">
-            <li
-              className="mainNav__li"
-              tabIndex="0"
-              onClick={() => window.scrollTo(0, 0)}
-            >
-              <FontAwesomeIcon icon={faHouse} className="mainNav__icon icon" />
-            </li>
             <li className="mainNav__li" tabIndex="0">
               <NavLink
                 to="/"

@@ -4,6 +4,7 @@ import ninaImage from "../../assets/img/projets/ninacarducci/nina.webp";
 import eventsImage from "../../assets/img/projets/77events/77events.webp";
 import argentBankImage from "../../assets/img/projets/argentbank/argentbank.webp";
 import javascriptLogo from "../../assets/img/skills/javascript.webp";
+import hemadexImage from "../../assets/img/projets/hemadex/hemadex.webp";
 import reactLogo from "../../assets/img/skills/react.webp";
 import sassLogo from "../../assets/img/skills/sass.webp";
 
@@ -94,5 +95,24 @@ export const projets = [
     github: true,
     description:
       "Implémentation du front-end d'une application bancaire. Récupération de données via appels API et centralisation avec Redux.  ",
+  },
+  {
+    title: "Hemadex",
+    stack: [
+      {
+        img: reactLogo,
+        alt: "React",
+      },
+      {
+        img: sassLogo,
+        alt: "Sass",
+      },
+    ],
+    stackAlt: "JavaScript",
+    img: hemadexImage,
+    url: "https://hemadex.com/",
+    github: false,
+    description:
+      "Dévelopement d'une application web communautaire, plateforme de partage de vidéo et contenus autour des arts martiaux européens.",
   },
 ];
