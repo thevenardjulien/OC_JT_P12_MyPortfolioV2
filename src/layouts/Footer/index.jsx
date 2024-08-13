@@ -1,15 +1,19 @@
-import { faLinkedin } from "@fortawesome/free-brands-svg-icons";
-import { faGithub } from "@fortawesome/free-brands-svg-icons";
+import {
+  faBehance,
+  faGithub,
+  faLinkedin,
+} from "@fortawesome/free-brands-svg-icons";
 import { faEnvelope } from "@fortawesome/free-regular-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Link } from "react-router-dom";
-import { faBehance } from "@fortawesome/free-brands-svg-icons";
 import "./style.scss";
 
 const Footer = () => {
+  const year = new Date().getFullYear();
+
   return (
     <footer>
-      <h3>JULIEN THEVENARD © 2024</h3>
+      <h3>JULIEN THEVENARD © {year}</h3>
       <ul>
         <li>
           <Link

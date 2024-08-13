@@ -14,12 +14,11 @@
 
 @media screen and (min-width: 768px) {
   .testimonials {
-    grid-template-columns: repeat(2, 1fr);
     column-gap: 50px;
   }
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1500px) {
   .testimonials {
     grid-template-columns: repeat(3, 1fr);
   }
